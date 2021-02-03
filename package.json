@@ -1,0 +1,19 @@
+{
+  "name": "rxjs-pipes",
+  "version": "0.0.1",
+  "description": "Npm 7 Monorepo for @bjesuiter self-developed RxJS Pipes",
+  "main": " ",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjesuiter/rxjs-pipes.git"
+  },
+  "author": "Benjamin Jesuiter <bjesuiter@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bjesuiter/rxjs-pipes/issues"
+  },
+  "homepage": "https://github.com/bjesuiter/rxjs-pipes#readme"
+}
