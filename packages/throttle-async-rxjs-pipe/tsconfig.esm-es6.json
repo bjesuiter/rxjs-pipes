@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "sourceMap": true,
+    "composite": false,
+    "removeComments": true,
+    "mapRoot": "dist",
+    "sourceRoot": "src",
+    "outDir": "dist/esm"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "strict": true,
+    "moduleResolution": "node"
+  },
+  "lib": [
+    "esnext"
+  ],
+  "include": [
+    "src/index.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/*.ava.ts",
+  ]
+}

@@ -1,0 +1,108 @@
+{
+	"name": "throttle-async-rxjs-pipe",
+	"version": "1.1.0",
+	"description": "A pipe functions for rxjs 6+ which accepts a 'wait' observable, emits 1 elements of the source stream and waits for an event on the 'wait' observable.",
+	"scripts": {
+		"test": "ava",
+		"clean": "del dist/*",
+		"compile:es5": "tsc -p tsconfig.json",
+		"compile:esm": "tsc -p tsconfig.esm-es6.json",
+		"build": "run-s clean compile:es5",
+		"build:prod": "run-s clean compile:es5 compile:esm",
+		"pika:build": "pika build",
+		"publish:test": "npm publish --dry-run"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bjesuiter/throttle-async-rxjs-pipe.git"
+	},
+	"keywords": [
+		"rxjs",
+		"rxjs6",
+		"rxjs6+",
+		"rxjs-pipe",
+		"pipe",
+		"rxjs6-pipe",
+		"rxjs6+-pipe",
+		"rxjs-throttle-async",
+		"throttle",
+		"observable"
+	],
+	"author": "Benjamin Jesuiter <bjesuiter@gmail.com>",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/bjesuiter/throttle-async-rxjs-pipe/issues"
+	},
+	"homepage": "https://github.com/bjesuiter/throttle-async-rxjs-pipe#readme",
+	"files": [
+		"dist/**/*",
+		"README.md",
+		"CHANGELOG.md"
+	],
+	"dependencies": {
+		"rxjs": "^6.0.0"
+	},
+	"devDependencies": {
+		"@ava/typescript": "^1.1.1",
+		"@pika/pack": "^0.5.0",
+		"@pika/plugin-build-deno": "^0.9.2",
+		"@pika/plugin-build-node": "^0.9.2",
+		"@pika/plugin-build-web": "^0.9.2",
+		"@pika/plugin-standard-pkg": "^0.9.2",
+		"@pika/plugin-ts-standard-pkg": "^0.9.2",
+		"@types/jest": "^26.0.15",
+		"@types/node": "^14.14.6",
+		"ava": "^3.13.0",
+		"del-cli": "^3.0.1",
+		"jest": "^26.6.1",
+		"jest-preset-typescript": "^1.2.0",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.1.2",
+		"shx": "^0.3.3",
+		"ts-jest": "^26.4.3",
+		"ts-node": "^9.0.0",
+		"typescript": "^4.0.5"
+	},
+	"ava": {
+		"files": [
+			"**/*.ava.ts"
+		],
+		"source": [
+			"**/*.ts"
+		],
+		"extensions": [
+			"ts"
+		],
+		"require": [
+			"ts-node/register"
+		],
+		"match": [],
+		"concurrency": 5,
+		"failFast": true,
+		"failWithoutAssertions": true,
+		"tap": true,
+		"powerAssert": false
+	},
+	"@pika/pack": {
+		"pipeline": [
+			[
+				"@pika/plugin-ts-standard-pkg",
+				{
+					"exclude": [
+						"**/*.ava.ts",
+						"**/*.spec.ts"
+					]
+				}
+			],
+			[
+				"@pika/plugin-build-node"
+			],
+			[
+				"@pika/plugin-build-web"
+			],
+			[
+				"@pika/plugin-build-deno"
+			]
+		]
+	}
+}
