@@ -1,6 +1,6 @@
 # throttle-async-rxjs-pipe
 
-A pipe functions for rxjs 6+ which accepts a 'wait' observable, emits 1 elements of the source stream
+A pipe functions for rxjs 7+ which accepts a 'wait' observable, emits 1 elements of the source stream
 and waits for an event on the 'wait' observable.
 
 ## What does throttleAsync do (in order)?
@@ -47,7 +47,11 @@ until `windowResizeEnd$` emits a value.
 
 ## Changelog
 
-## [1.2.0] - WIP
+## [1.2.1] - 2024-04-16
+
+- Fix rxjs version in README.md
+
+## [1.2.0] - 2024-04-16
 
 Breaking Change: Lib now requires rxjs 7.0.0 or higher!
 
