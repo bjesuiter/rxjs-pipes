@@ -1,1 +1,1 @@
-export {filterAsync, filterByPromise} from './lib/filter-async';
+export { filterAsync, filterByPromise } from "./filter-async";
