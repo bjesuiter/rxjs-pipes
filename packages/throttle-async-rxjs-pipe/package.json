@@ -2,6 +2,9 @@
 	"name": "throttle-async-rxjs-pipe",
 	"version": "1.1.0",
 	"description": "A pipe functions for rxjs 6+ which accepts a 'wait' observable, emits 1 elements of the source stream and waits for an event on the 'wait' observable.",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "./dist/index.d.ts",
 	"scripts": {
 		"test": "ava",
 		"clean": "del dist/*",
