@@ -1,4 +1,5 @@
-import { MonoTypeOperatorFunction, Observable, pipe } from "rxjs";
+import type { MonoTypeOperatorFunction } from "rxjs";
+import { Observable, pipe } from "rxjs";
 import { filter } from "rxjs/operators";
 
 /**

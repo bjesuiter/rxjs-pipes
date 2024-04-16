@@ -14,7 +14,9 @@
 		"build:prod": "run-s clean compile:es5 compile:esm",
 		"pika:build": "pika build",
 		"publish:test": "npm publish --dry-run",
-		"tsup": "tsup index.ts --format cjs,esm --dts --minify --clean --sourcemap"
+		"newScripts": "",
+		"tsup": "tsup src/index.ts --format cjs,esm --dts --minify --clean --sourcemap",
+		"lint": "tsc"
 	},
 	"repository": {
 		"type": "git",
@@ -64,8 +66,7 @@
 		"prettier": "^2.1.2",
 		"shx": "^0.3.3",
 		"ts-jest": "^26.4.3",
-		"ts-node": "^9.0.0",
-		"typescript": "^4.0.5"
+		"ts-node": "^9.0.0"
 	},
 	"ava": {
 		"files": [

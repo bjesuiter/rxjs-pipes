@@ -42,7 +42,8 @@ until `windowResizeEnd$` emits a value.
 
 ## Tooling
 
-- [Pika Pack TS Compile](https://www.npmjs.com/package/@pika/plugin-ts-standard-pkg)
+- tsup bundler docs: https://paka.dev/npm/tsup@8.0.2/api
+- tsup website: https://tsup.egoist.dev/
 
 ## Changelog
 
