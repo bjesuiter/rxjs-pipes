@@ -6,8 +6,8 @@ BREAKING CHANGE from ^2.0.0: This library now requires rxjs 7.0.0 or higher!
 
 ## Usage
 
-See [filter-async.spec.ts](https://github.com/bjesuiter/filter-async-rxjs-pipe/blob/master/src/lib/filter-async.spec.ts)
-in [Github](https://github.com/bjesuiter/filter-async-rxjs-pipe) for usage examples.
+See [filter-async.test.ts](https://github.com/bjesuiter/rxjs-pipes/blob/main/packages/filter-async/src/filter-async.test.ts)
+in [Github](https://github.com/bjesuiter/rxjs-pipes/tree/main/packages/filter-async) for usage examples.
 
 ##  Provided rxjs 7+ pipes
 

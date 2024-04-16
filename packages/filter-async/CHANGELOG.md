@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 A new release should be issued when a branch is merged to main.
 
+## [2.0.1] - 2024-04-16 
+
+- Fix Links in README.md
+
 ## [2.0.0] - 2024-04-16 
 
 BREAKING CHANGE: This library now requires rxjs 7.0.0 or higher!
