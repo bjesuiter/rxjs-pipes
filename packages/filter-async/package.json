@@ -10,11 +10,13 @@
     "rxjs": "^7.0.0"
   },
   "scripts": {
-    "test": "jest",
-    "typecheck": "tsc --noEmit",
-    "build": "del dist/* && tsc -p tsconfig.json",
-    "build-swc": "swc src -d dist --ignore **/*.spec.ts",
-    "deploy": "npm publish"
+		"lint": "tsc",
+		"test": "bun test",
+		"test-dev": "bun test --watch",
+		"test-only": "bun test --only --watch",
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean --sourcemap",
+		"dry-publish": "npm publish --dry-run",
+    "dist": "bun lint && bun test && bun run build && npm publish"
   },
   "repository": {
     "type": "git",
