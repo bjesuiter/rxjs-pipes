@@ -49,12 +49,13 @@ until `windowResizeEnd$` emits a value.
 
 ## [1.2.0] - WIP
 
-- Switched to @pika/pack for building the library, which unlocks lot more formats for consuming the library:
-  - dist-src (ES2020, ESM)
-  - dist-node (ES2020, Require)
-  - dist-types (Typescript Typings)
-  - dist-web (ES2020, Inline ESM)
-  - dist-deno (Typescript Source)
+Breaking Change: Lib now requires rxjs 7.0.0 or higher!
+
+- Switched to `tsup` for building the library, which unlocks lot more formats for consuming the library:
+  - dist/index.js (ES2020, CJS)
+  - dist/index.mjs (ES2020, ESM)
+  - dist/index.d.ts (Typescript Typings)
+  - src/\* (Typescript Source)
 
 ## [1.1.0] - 2020-04-13
 
