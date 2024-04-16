@@ -9,5 +9,15 @@
       }
     }
   ],
-  "nxCloudAccessToken": "MjdkNGI3ZWYtOWZiNy00MzU5LTliMWEtZDU4MWFmY2Q4NmRkfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MjdkNGI3ZWYtOWZiNy00MzU5LTliMWEtZDU4MWFmY2Q4NmRkfHJlYWQtd3JpdGU=",
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
+    "sharedGlobals": [],
+    "production": [
+      "default"
+    ]
+  }
 }
