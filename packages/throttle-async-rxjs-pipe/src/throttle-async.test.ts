@@ -3,6 +3,12 @@ import { EMPTY, firstValueFrom, interval, of, TimeoutError } from "rxjs";
 import { catchError, map, take, tap, timeout } from "rxjs/operators";
 import { throttleAsync } from "./throttle-async";
 
+/**
+ * Throttle Async Pipe (Source Interval 500)
+ * Without any waitUntil$ emission
+ * Should emit first element and wait 'indefinitely'
+ * (test waits for 3000 ms)
+ */
 test(
   `ThrottleAsync: emits one event and no more, because it waits for waitUntil$ to emit`,
   () => {
@@ -20,7 +26,7 @@ test(
         eventCount++;
         console.log(`Emit after ThrottleAsync: ${absoluteTime}`);
       }),
-      timeout(5000),
+      timeout(3000),
       catchError((error) => {
         // THIS CANNOT HAPPEN IN THIS TEST!
         console.log(`TimeoutEvent: ${error.message}`);
@@ -33,5 +39,5 @@ test(
 
     return firstValueFrom(testpipe);
   },
-  6000,
+  3000,
 );
