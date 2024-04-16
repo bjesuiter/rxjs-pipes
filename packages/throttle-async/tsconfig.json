@@ -3,24 +3,4 @@
   "compilerOptions": {
     "moduleResolution": "node"
   }
-  // "compilerOptions": {
-  //   "target": "ES2020",
-  //   "module": "esnext",
-  //   "strict": true,
-  //   "moduleResolution": "node",
-  //   "noUncheckedIndexedAccess": true,
-  //   "noEmit": true
-  // },
-  // "lib": [
-  //   "esnext"
-  // ],
-  // "include": [
-  //   "src/index.ts"
-  // ],
-  // "exclude": [
-  //   "node_modules",
-  //   "**/*.spec.ts",
-  //   "**/*.test.ts",
-  //   "**/*.ava.ts"
-  // ]
 }
