@@ -4,7 +4,7 @@ import { forkJoin, Observable, of, range } from "rxjs";
 import { bufferCount, map, reduce } from "rxjs/operators";
 import { difference } from "underscore";
 import { promiseDelay } from "../test/promise-delay-helper.ts";
-import { filterByPromise } from "./filter-async";
+import { filterByPromise } from "./filter-async.ts";
 
 describe("Filter Async Sequential", () => {
   it("Returns correct element count after filtering", (done) => {
