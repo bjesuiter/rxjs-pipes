@@ -1,10 +1,10 @@
-import { filterByPromise } from "./filter-async";
-import { forkJoin, of, range } from "rxjs";
 import { Promise } from "es6-promise";
+import * as moment from "moment";
+import { forkJoin, of, range } from "rxjs";
 import { bufferCount, map, reduce } from "rxjs/operators";
 import { difference } from "underscore";
 import { promiseDelay } from "../test/promise-delay-helper.ts";
-import * as moment from "moment";
+import { filterByPromise } from "./filter-async";
 
 describe("Filter Async Sequential", () => {
   it("Returns correct element count after filtering", (done) => {
