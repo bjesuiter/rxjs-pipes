@@ -62,10 +62,10 @@ test(
  * 2000ms: interval(500) emits 4, waitUntil$ emits, testpipe with throttleAsync emits
  */
 
-test.todo(`ThrottleAsync: emits two events after waitUntil$ emits`, () => {
+test(`ThrottleAsync: emits two events after waitUntil$ emits`, () => {
   const waitUntil$ = interval(2000).pipe(
     take(1),
-    tap(() => console.log("Observable waitUntil$ emitted!")),
+    tap(() => console.log("waitUntil$: emits one event and completes")),
   );
   let eventCount = 0;
   let absoluteTime = 0;
@@ -73,12 +73,12 @@ test.todo(`ThrottleAsync: emits two events after waitUntil$ emits`, () => {
   const testpipe = interval(500).pipe(
     tap(() => {
       absoluteTime += 500;
-      console.log(`interval(500): Time Passed: ${absoluteTime}`);
+      // console.log(`interval(500): Time Passed: ${absoluteTime}`);
     }),
     throttleAsync(waitUntil$),
     tap(() => {
       eventCount++;
-      console.log(`Emit after ThrottleAsync: ${absoluteTime}`);
+      console.log(`testpipe: Emits after ThrottleAsync: ${absoluteTime}`);
     }),
     timeout(3000),
     catchError((error) => {
@@ -86,9 +86,9 @@ test.todo(`ThrottleAsync: emits two events after waitUntil$ emits`, () => {
       console.log(`TimeoutEvent: ${error.message}`);
       expect(error).toBeInstanceOf(TimeoutError);
       expect(eventCount).toBe(2);
-      return EMPTY;
+      return of("timeout");
     }),
   );
 
-  return firstValueFrom(testpipe);
+  return lastValueFrom(testpipe.pipe(take(2)));
 });
