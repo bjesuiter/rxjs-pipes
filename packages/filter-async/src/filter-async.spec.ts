@@ -1,6 +1,6 @@
 import { Promise } from "es6-promise";
 import * as moment from "moment";
-import { forkJoin, of, range } from "rxjs";
+import { forkJoin, Observable, of, range } from "rxjs";
 import { bufferCount, map, reduce } from "rxjs/operators";
 import { difference } from "underscore";
 import { promiseDelay } from "../test/promise-delay-helper.ts";
@@ -13,7 +13,10 @@ describe("Filter Async Sequential", () => {
         filterByPromise((value) => Promise.resolve(value % 2 === 0), false),
         reduce((acc: number) => ++acc, 0),
       )
-      .subscribe((filterCount) => expect(filterCount).toBe(5), done());
+      .subscribe((filterCount) => {
+        expect(filterCount).toBe(5);
+        done();
+      });
   });
 
   it("Correct element ordering after filtering", (done) => {
@@ -25,15 +28,17 @@ describe("Filter Async Sequential", () => {
         bufferCount(5),
       )
       .subscribe(
-        (result: number[]) => expect(result).toEqual(comparableResult),
-        done(),
+        (result: number[]) => {
+          expect(result).toEqual(comparableResult);
+          done();
+        },
       );
   });
 
   it("Correct element ordering after filtering - multiple rounds", (done) => {
     const comparableResult = [2, 4, 6, 8, 10];
 
-    const observables = [];
+    const observables: Array<Observable<boolean>> = [];
     const roundCount = 10;
 
     for (let i = 0; i < roundCount; i++) {
@@ -114,9 +119,8 @@ describe("Filter Async Parallel", () => {
       .subscribe(
         (elements: string[]) => {
           expect(elements).toEqual(comparableResult);
+          done();
         },
-        console.log,
-        done,
       );
   }, moment.duration(10, "s").asMilliseconds());
 });
