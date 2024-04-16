@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "main",
+  "plugins": [
+    {
+      "plugin": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ],
+  "nxCloudAccessToken": "MjdkNGI3ZWYtOWZiNy00MzU5LTliMWEtZDU4MWFmY2Q4NmRkfHJlYWQtd3JpdGU="
+}

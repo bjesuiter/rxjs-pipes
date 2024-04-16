@@ -104,5 +104,8 @@
 				"@pika/plugin-build-deno"
 			]
 		]
+	},
+	"nx": {
+		"includedScripts": []
 	}
 }
