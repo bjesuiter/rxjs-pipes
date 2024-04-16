@@ -2,6 +2,8 @@
 
 Some pipeable functions for rxjs 7+ which accept predicate lambdas with async return value (Promise or Observable).
 
+BREAKING CHANGE from ^2.0.0: This library now requires rxjs 7.0.0 or higher!
+
 ## Usage
 
 See [filter-async.spec.ts](https://github.com/bjesuiter/filter-async-rxjs-pipe/blob/master/src/lib/filter-async.spec.ts)

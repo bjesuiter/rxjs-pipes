@@ -4,7 +4,11 @@
   "description": "Some pipeable functions for rxjs 7+ which accept predicate lambdas with async return value (Promise or Observable)",
   "main": "./dist/src/index.js",
   "files": [
-    "dist/**/*"
+    "dist/**/*", 
+    "src/**/*", 
+    "README.md", 
+    "CHANGELOG.md",
+    "LICENSE"
   ],
   "peerDependencies": {
     "rxjs": "^7.0.0"
@@ -38,18 +42,5 @@
   },
   "homepage": "https://github.com/bjesuiter/filter-async-rxjs-pipe#readme",
   "devDependencies": {
-    "@swc/cli": "^0.1.55",
-    "@swc/core": "^1.2.136",
-    "@swc/jest": "^0.2.17",
-    "@types/jest": "^27.4.0",
-    "@types/node": "^16.11.22",
-    "@types/underscore": "^1.11.4",
-    "del-cli": "^4.0.1",
-    "esbuild": "^0.14.18",
-    "jest": "^27.4.7",
-    "moment": "^2.29.1",
-    "ts-jest": "^27.1.3",
-    "typescript": "^5.0.0",
-    "underscore": "^1.13.2"
   }
 }

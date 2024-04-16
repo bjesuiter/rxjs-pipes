@@ -4,7 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-A new release should be issued when a branch is merged to master.
+A new release should be issued when a branch is merged to main.
+
+## [2.0.0] - 2024-04-16 
+
+BREAKING CHANGE: This library now requires rxjs 7.0.0 or higher!
+
+- Now build with `tsup` for more formats:
+  - dist/index.js (ES2020, CJS)
+  - dist/index.mjs (ES2020, ESM)
+  - dist/index.d.ts (TypeScript typings)
+  - src/* (TypeScript source)
 
 ## [1.0.1] - 2022-02-04 
 

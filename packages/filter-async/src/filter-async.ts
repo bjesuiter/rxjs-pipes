@@ -17,7 +17,6 @@ import {
   pipe,
 } from "rxjs";
 import { concatMap, filter, map, mergeMap, subscribeOn } from "rxjs/operators";
-import { Thenable } from "es6-promise";
 
 interface FilterContainer<T> {
   filterResult: boolean;
@@ -25,7 +24,7 @@ interface FilterContainer<T> {
 }
 
 type Predicate$<T> = (value: T, index: number) => Observable<boolean>;
-type Predicate<T> = (value: T, index: number) => Thenable<boolean>;
+type Predicate<T> = (value: T, index: number) => Promise<boolean>;
 
 /**
  * This rxjs 6+ pipe accepts a predicate function which returns a thenable.
