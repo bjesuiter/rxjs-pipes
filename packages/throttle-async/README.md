@@ -47,7 +47,7 @@ until `windowResizeEnd$` emits a value.
 
 ## Changelog
 
-## [1.2.1] - 2024-04-16
+## [throttle-async-rxjs-pipe@1.2.1] - 2024-04-16
 
 - Fix rxjs version in README.md
 
