@@ -7,6 +7,7 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"test": "bun test",
+		"test-dev": "bun test --only --watch",
 		"publish:test": "npm publish --dry-run",
 		"newScripts": "",
 		"tsup": "tsup src/index.ts --format cjs,esm --dts --minify --clean --sourcemap",
