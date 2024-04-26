@@ -4,7 +4,8 @@
 	"description": "Npm 7 Monorepo for @bjesuiter self-developed RxJS Pipes",
 	"private": true,
 	"scripts": {
-		"test": " "
+		"build-filter-async": "nx build filter-async-rxjs-pipe",
+		"build-throttle-async": "nx build throttle-async-rxjs-pipe"
 	},
 	"repository": {
 		"type": "git",
