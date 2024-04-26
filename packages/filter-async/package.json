@@ -1,46 +1,45 @@
 {
-  "name": "filter-async-rxjs-pipe",
-  "version": "2.0.1",
-  "description": "Some pipeable functions for rxjs 7+ which accept predicate lambdas with async return value (Promise or Observable)",
-  "main": "./dist/src/index.js",
-  "files": [
-    "dist/**/*", 
-    "src/**/*", 
-    "README.md", 
-    "CHANGELOG.md",
-    "LICENSE"
-  ],
-  "peerDependencies": {
-    "rxjs": "^7.0.0"
-  },
-  "scripts": {
+	"name": "filter-async-rxjs-pipe",
+	"version": "2.0.2",
+	"description": "Some pipeable functions for rxjs 7+ which accept predicate lambdas with async return value (Promise or Observable)",
+	"main": "./dist/src/index.js",
+	"files": [
+		"dist/**/*",
+		"src/**/*",
+		"README.md",
+		"CHANGELOG.md",
+		"LICENSE"
+	],
+	"peerDependencies": {
+		"rxjs": "^7.0.0"
+	},
+	"scripts": {
 		"lint": "tsc",
 		"test": "bun test",
 		"test-dev": "bun test --watch",
 		"test-only": "bun test --only --watch",
-    "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean --sourcemap",
+		"build": "tsup src/index.ts --format cjs,esm --dts --minify --clean --sourcemap",
 		"dry-publish": "npm publish --dry-run",
-    "dist": "bun lint && bun test && bun run build && npm publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/bjesuiter/filter-async-rxjs-pipe.git"
-  },
-  "keywords": [
-    "rxjs",
-    "rxjs7",
-    "rxjs-pipe",
-    "rxjs-filter",
-    "rxjs-async-filter",
-    "observable",
-    "filter"
-  ],
-  "author": "Benjamin Jesuiter <bjesuiter@gmail.com>",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/bjesuiter/filter-async-rxjs-pipe/issues"
-  },
-  "homepage": "https://github.com/bjesuiter/filter-async-rxjs-pipe#readme",
-  "devDependencies": {
-  }
+		"dist": "bun lint && bun test && bun run build && npm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/bjesuiter/filter-async-rxjs-pipe.git"
+	},
+	"keywords": [
+		"rxjs",
+		"rxjs7",
+		"rxjs-pipe",
+		"rxjs-filter",
+		"rxjs-async-filter",
+		"observable",
+		"filter"
+	],
+	"author": "Benjamin Jesuiter <bjesuiter@gmail.com>",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/bjesuiter/filter-async-rxjs-pipe/issues"
+	},
+	"homepage": "https://github.com/bjesuiter/filter-async-rxjs-pipe#readme",
+	"devDependencies": {}
 }
