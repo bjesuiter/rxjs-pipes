@@ -7,9 +7,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 A new release should be issued when a branch is merged to main.
 
-## filter-async-rxjs-pipe@2.0.2 - 2024-04-26
+## filter-async-rxjs-pipe@2.0.3 - 2024-04-26
 
 - (fix): export of index.js
+
+## filter-async-rxjs-pipe@2.0.2 - 2024-04-26
+
+- (fix): export of index.js - not committed
 
 ## [2.0.1] - 2024-04-16
 
