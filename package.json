@@ -1,34 +1,34 @@
 {
-	"name": "rxjs-pipes",
-	"version": "0.0.1",
-	"description": "Npm 7 Monorepo for @bjesuiter self-developed RxJS Pipes",
-	"private": true,
-	"scripts": {
-		"build-filter-async": "nx build filter-async-rxjs-pipe",
-		"build-throttle-async": "nx build throttle-async-rxjs-pipe"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/bjesuiter/rxjs-pipes.git"
-	},
-	"author": "Benjamin Jesuiter <bjesuiter@gmail.com>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/bjesuiter/rxjs-pipes/issues"
-	},
-	"homepage": "https://github.com/bjesuiter/rxjs-pipes#readme",
-	"devDependencies": {
-		"@types/bun": "latest",
-		"esm": "^3.2.25",
-		"jest": "^29.4.1",
-		"npm-run-all": "^4.1.5",
-		"nx": "18.2.4",
-		"prettier": "^3.5.3",
-		"tsup": "^8.0.2",
-		"typescript": "^5.8.3"
-	},
-	"workspaces": [
-		"./packages/*",
-		"./examples/*"
-	]
+  "name": "rxjs-pipes",
+  "version": "0.0.1",
+  "description": "Npm 7 Monorepo for @bjesuiter self-developed RxJS Pipes",
+  "private": true,
+  "scripts": {
+    "build-filter-async": "nx build filter-async-rxjs-pipe",
+    "build-throttle-async": "nx build throttle-async-rxjs-pipe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjesuiter/rxjs-pipes.git"
+  },
+  "author": "Benjamin Jesuiter <bjesuiter@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bjesuiter/rxjs-pipes/issues"
+  },
+  "homepage": "https://github.com/bjesuiter/rxjs-pipes#readme",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "esm": "^3.2.25",
+    "jest": "^29.4.1",
+    "npm-run-all": "^4.1.5",
+    "nx": "21.2.0",
+    "prettier": "^3.5.3",
+    "tsup": "^8.0.2",
+    "typescript": "^5.8.3"
+  },
+  "workspaces": [
+    "./packages/*",
+    "./examples/*"
+  ]
 }
