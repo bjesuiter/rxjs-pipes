@@ -40,14 +40,11 @@
 		"dist/**/*",
 		"src/**/*",
 		"README.md",
-		"CHANGELOG.md", 
+		"CHANGELOG.md",
 		"LICENSE.md"
 	],
 	"dependencies": {
-		"rxjs": "^7.0.0"
+		"rxjs": "catalog:rxjs"
 	},
-	"devDependencies": {},
-	"nx": {
-		"includedScripts": []
-	}
+	"devDependencies": {}
 }

@@ -13,7 +13,7 @@
 		"LICENSE"
 	],
 	"peerDependencies": {
-		"rxjs": "^7.0.0"
+		"rxjs": "catalog:rxjs"
 	},
 	"scripts": {
 		"lint": "tsc",
